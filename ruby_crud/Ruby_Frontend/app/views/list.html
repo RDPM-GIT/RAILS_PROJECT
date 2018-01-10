@@ -1,0 +1,35 @@
+<style>
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+    
+    th, td {
+        text-align: left;
+        padding: 8px;
+    }
+    </style>
+<table class="table" >
+
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Place</th>
+        <th>Age</th>
+      <th> Actions </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="entry in entries">
+        <td>{{entry.Name}}</td>
+        <td>{{entry.Place}}</td>
+        <td>{{entry.Age}}</td>
+      <td><a href="#/edit/{{entry.$id}}" class="btn btn-small btn-primary">Edit</a> 
+        <a href="#/" ng-click="deleteEntries(entry)" class="btn btn-small btn-danger">Delete</a>
+  
+      </tr>
+    </tbody>
+  </table>
+  <p>
+      <a href="#/add" class="btn btn-success" role="button">Add New Entry</a>
+  </p>

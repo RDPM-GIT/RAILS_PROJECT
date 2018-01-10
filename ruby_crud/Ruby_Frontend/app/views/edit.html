@@ -1,0 +1,34 @@
+<h1>Edit Entry</h1>
+
+<form name="edit_form" class="form-horizontal" role="form">
+  <div class="form-group">
+    <label>Name:</label>
+    <div class="col-sm-4">
+      <input class="form-control" id="Name"
+             ng-model="entries.Name" placeholder="Name"/>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label>Place:</label>
+    <div class="col-sm-4">
+      <input class="form-control" id="Place"
+             ng-model="entries.Place" placeholder="Place"/>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label>Age:</label>
+    <div class="col-sm-4">
+      <input class="form-control" id="Age" type="number" step="any"
+             ng-model="entries.Age"/>
+    </div>
+  </div>
+
+  <div class="form-group">
+
+    <div class="col-sm-offset-2 col-sm-10">
+      <input type="submit" id="submit" class="btn btn-small btn-primary" ng-click="editEntries()" class="btn btn-small btn-primary"></button> <a href="#/" class="btn btn-small btn-danger">Cancel</a>
+    </div>
+  </div>
+</form>
