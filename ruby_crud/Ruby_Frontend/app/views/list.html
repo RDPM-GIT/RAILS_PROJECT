@@ -20,11 +20,11 @@
       </tr>
     </thead>
     <tbody>
-      <tr ng-repeat="entry in entries">
-        <td>{{entry.Name}}</td>
-        <td>{{entry.Place}}</td>
-        <td>{{entry.Age}}</td>
-      <td><a href="#/edit/{{entry.$id}}" class="btn btn-small btn-primary">Edit</a> 
+      <tr ng-repeat="entry in realData">
+        <td>{{entry.name}}</td>
+        <td>{{entry.place}}</td>
+        <td>{{entry.age}}</td>
+      <td><a href="#/edit/{{entry.id}}" class="btn btn-small btn-primary">Edit</a> 
         <a href="#/" ng-click="deleteEntries(entry)" class="btn btn-small btn-danger">Delete</a>
   
       </tr>
